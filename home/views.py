@@ -5,8 +5,12 @@ from home import run_db
 def index(request):
     x=request.GET
     run_db.student()
+    data={
+        'title':"Hello World",
+        'name':[x['name'],x['name2'],x['name3'],x['name4']]
+    }
     #print("hello")
-    return HttpResponse(f"this is {x['name2']} world")
+    return render(request,'index.html',data)
 
 
 

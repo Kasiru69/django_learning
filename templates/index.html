@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+<div style="background-color:red">
+<!--<p>-->
+<!--    My name is {{name1}}-->
+<!--</p>-->
+<!--    <p>-->
+<!--        My friend's name is {{name2}}-->
+<!--    </p>-->
+    <ol>
+    {% for val in name %}
+    <li>Name is {{val}}</li>
+    {% endfor %}
+        </ol>
+</div>
+</body>
+</html>
